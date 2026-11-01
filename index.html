@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maberu | Microsoft Azure &amp; Power Platform Solutions for Business</title>
   <meta name="description" content="Maberu designs and delivers Microsoft Azure, Power Platform, Power Apps, Power Automate and Dynamics solutions that automate processes and modernize business software.">
-  <meta name="keywords" content="Azure consulting, Power Platform, Power Apps, Power Automate, Power BI, Microsoft 365, business automation">
+  <meta name="keywords" content="Azure consulting, Power Platform, Power Apps, Power Automate, Power BI, business automation">
   <link rel="canonical" href="https://maberu.github.io/">
   <meta property="og:title" content="Maberu | Azure &amp; Power Platform Solutions">
   <meta property="og:description" content="Business solutions built on Microsoft Azure and Power Platform.">
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Maberu","description":"Microsoft Azure and Power Platform solutions for business.","url":"https://maberu.github.io/","email":"hello@maberu.example"}
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Maberu","description":"Microsoft Azure and Power Platform solutions for business.","url":"https://maberu.github.io/","email":"hello@maberusolutions.com"}
   </script>
 </head>
 <body>
@@ -181,7 +181,7 @@
       <p class="muted">Not listed? <a href="#contact">Ask us directly.</a></p>
     </div>
     <div class="faq">
-      <details><summary>Do we need a Microsoft 365 licence?</summary><p>Usually yes, but we check what you already own first and avoid unnecessary licences.</p></details>
+      <details><summary>Why choose Maberu?</summary><p>We combine Azure engineering with practical Power Platform delivery. You work directly with the people building your solution, get clear scope and milestones, and keep everything in your own tenant.</p></details>
       <details><summary>Power Platform or custom Azure code?</summary><p>Power Platform for speed and business-owned processes; Azure code for complex, high-scale or deeply integrated needs. Often a mix of both.</p></details>
       <details><summary>How long does a project take?</summary><p>Most first releases ship in 3–6 weeks. We agree scope and milestones up front.</p></details>
       <details><summary>Who owns the solution?</summary><p>You do. Everything lives in your tenant and your repositories.</p></details>
@@ -196,9 +196,15 @@
   <div class="wrap">
     <h2>Ready to build something that works?</h2>
     <p>Tell us about your process. We reply within one business day with ideas, no obligation.</p>
-    <form class="lead" id="lead" action="mailto:hello@maberu.example" method="post" enctype="text/plain">
-      <input type="email" name="email" placeholder="you@company.com" aria-label="Work email" required>
+    <form class="lead" id="lead">
+      <label for="lead-name">Name</label>
+      <input id="lead-name" type="text" name="name" autocomplete="name" required>
+      <label for="lead-email">Email</label>
+      <input id="lead-email" type="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+      <label for="lead-message">Describe your question or situation</label>
+      <textarea id="lead-message" name="message" rows="5" required></textarea>
       <button class="btn btn-xl" type="submit">Get a free consultation →</button>
+      <p class="form-note">Your email app will open with your message ready to send.</p>
     </form>
     <ul class="micro"><li>✓ Free 30-minute call</li><li>✓ Fixed-scope quotes</li><li>✓ Your data stays in your tenant</li></ul>
   </div>
@@ -213,8 +219,8 @@
       <p class="muted">Azure &amp; Power Platform solutions for business.</p>
     </div>
     <div><h4>Services</h4><a href="#services">Azure</a><a href="#services">Power Apps</a><a href="#services">Power Automate</a><a href="#services">Power BI</a></div>
-    <div><h4>Contact</h4><a href="mailto:hello@maberu.example">hello@maberu.example</a><span>Remote · Worldwide</span></div>
-    <div><h4>Follow</h4><div class="social"><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://github.com/" aria-label="GitHub">gh</a></div></div>
+    <div><h4>Contact</h4><a href="mailto:hello@maberusolutions.com">hello@maberusolutions.com</a><span>Remote · Worldwide</span></div>
+    <div><h4>Useful links</h4><a href="https://learn.microsoft.com/power-platform/" target="_blank" rel="noopener noreferrer">Power Platform docs</a><a href="https://learn.microsoft.com/azure/" target="_blank" rel="noopener noreferrer">Microsoft Azure docs</a><a href="https://learn.microsoft.com/dynamics365/" target="_blank" rel="noopener noreferrer">Dynamics 365 docs</a><a href="https://learn.microsoft.com/microsoft-365/" target="_blank" rel="noopener noreferrer">Microsoft 365 docs</a></div>
   </div>
   <div class="wrap bottom"><span>© <span id="year">2026</span> Maberu. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="privacy.html#terms">Terms</a></span></div>
 </footer>

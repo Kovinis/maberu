@@ -121,8 +121,13 @@ details p{color:var(--muted);margin-top:.8rem;animation:up .4s forwards;opacity:
 .final{padding:9rem 0;text-align:center;position:relative;overflow:hidden;background:radial-gradient(700px 400px at 50% 100%,rgba(46,230,197,.3),transparent 70%),linear-gradient(135deg,#102447,#0b1220)}
 .final h2{margin:0 auto 1rem;max-width:18ch;font-size:clamp(2.6rem,6vw,4.8rem)}
 .final p{color:var(--muted);font-size:1.2rem;margin-bottom:2.5rem}
-.lead{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
-.lead input{padding:1.1rem 1.5rem;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:inherit;min-width:min(340px,100%)}
+.lead{display:grid;grid-template-columns:1fr;gap:.65rem;text-align:left;width:min(620px,100%);margin:0 auto}
+.lead label{font-size:.92rem;font-weight:600}
+.lead input,.lead textarea{padding:.9rem 1.1rem;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:inherit;width:100%;margin-bottom:.4rem}
+.lead textarea{resize:vertical;min-height:130px}
+.lead input::placeholder{color:var(--muted)}
+.lead .btn{justify-self:center;margin-top:.5rem}
+.form-note{text-align:center;font-size:.9rem!important;margin:.1rem 0 0!important}
 .micro{list-style:none;padding:0;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;color:var(--muted);font-size:.95rem}
 
 .footer{background:#070c17;padding:4rem 0 1.5rem;font-size:.95rem;position:relative}

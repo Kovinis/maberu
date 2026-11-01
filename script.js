@@ -30,3 +30,18 @@ document.querySelectorAll('[data-count]').forEach(el => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('lead').addEventListener('submit', event => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const data = new FormData(form);
+  const body = [
+    `Name: ${data.get('name')}`,
+    `Email: ${data.get('email')}`,
+    '',
+    'Question / situation:',
+    data.get('message')
+  ].join('\n');
+  const mailto = `mailto:hello@maberusolutions.com?subject=${encodeURIComponent('Free consultation request')}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+});
