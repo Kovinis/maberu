@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Maberu","description":"Microsoft Azure and Power Platform solutions for business.","url":"https://maberu.github.io/","email":"hello@maberusolutions.com"}
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Maberu","description":"Microsoft Azure and Power Platform solutions for business.","url":"https://maberu.github.io/","email":"info@maberusolutions.com"}
   </script>
 </head>
 <body>
@@ -72,18 +72,18 @@
       <div class="window">
         <div class="bar"><i></i><i></i><i></i><b>Approvals · Power App</b></div>
         <div class="kpis">
-          <div><small>Open requests</small><strong>128</strong></div>
-          <div><small>Avg. approval</small><strong>3.2h</strong></div>
-          <div><small>Automated</small><strong>92%</strong></div>
+          <div><small>Open requests</small><strong id="kOpen">128</strong></div>
+          <div><small>Avg. approval</small><strong id="kAvg">3.2h</strong></div>
+          <div><small>Automated</small><strong id="kAuto">92%</strong></div>
         </div>
-        <svg viewBox="0 0 300 90" class="chart"><defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d9b746" stop-opacity=".5"/><stop offset="1" stop-color="#d9b746" stop-opacity="0"/></linearGradient></defs><path d="M0 70 L40 58 L80 64 L120 38 L160 44 L200 24 L240 30 L300 8 V90 H0Z" fill="url(#g)"/><path d="M0 70 L40 58 L80 64 L120 38 L160 44 L200 24 L240 30 L300 8" fill="none" stroke="#d9b746" stroke-width="2.5"/></svg>
-        <ul class="rows">
+        <svg viewBox="0 0 300 90" class="chart"><defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d9b746" stop-opacity=".5"/><stop offset="1" stop-color="#d9b746" stop-opacity="0"/></linearGradient></defs><path id="chartArea" d="M0 70 L40 58 L80 64 L120 38 L160 44 L200 24 L240 30 L300 8 V90 H0Z" fill="url(#g)"/><path id="chartLine" d="M0 70 L40 58 L80 64 L120 38 L160 44 L200 24 L240 30 L300 8" fill="none" stroke="#d9b746" stroke-width="2.5"/></svg>
+        <ul class="rows" id="rows">
           <li><span class="dot ok"></span>Purchase order #2041<em>Approved</em></li>
           <li><span class="dot wait"></span>Leave request · Finance<em>Pending</em></li>
           <li><span class="dot ok"></span>Vendor onboarding<em>Approved</em></li>
         </ul>
       </div>
-      <div class="chip c1">⚡ Power Automate flow ran</div>
+      <div class="chip c1" id="chipFlow">⚡ Power Automate flow ran</div>
       <div class="chip c2">☁ Deployed to Azure</div>
     </div>
   </div>
@@ -219,7 +219,7 @@
       <p class="muted">Azure &amp; Power Platform solutions for business.</p>
     </div>
     <div><h4>Services</h4><a href="#services">Azure</a><a href="#services">Power Apps</a><a href="#services">Power Automate</a><a href="#services">Power BI</a></div>
-    <div><h4>Contact</h4><a href="mailto:hello@maberusolutions.com">hello@maberusolutions.com</a><span>Remote · Worldwide</span></div>
+    <div><h4>Contact</h4><a href="mailto:info@maberusolutions.com">info@maberusolutions.com</a><span>Remote · Worldwide</span></div>
     <div><h4>Useful links</h4><a href="https://learn.microsoft.com/power-platform/" target="_blank" rel="noopener noreferrer">Power Platform docs</a><a href="https://learn.microsoft.com/azure/" target="_blank" rel="noopener noreferrer">Microsoft Azure docs</a><a href="https://learn.microsoft.com/dynamics365/" target="_blank" rel="noopener noreferrer">Dynamics 365 docs</a><a href="https://learn.microsoft.com/microsoft-365/" target="_blank" rel="noopener noreferrer">Microsoft 365 docs</a></div>
   </div>
   <div class="wrap bottom"><span>© <span id="year">2026</span> Maberu. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="privacy.html#terms">Terms</a></span></div>
